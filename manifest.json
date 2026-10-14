@@ -1,18 +1,20 @@
+
 {
   "name": "Welcome to our Town",
-  "short_name": "Welcome to our Town",
+  "short_name": "W2OT",
   "start_url": "./",
+  "scope": "./",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#ffffff",
   "icons": [
     {
-      "src": "London_Click_icon_192.png",
+      "src": "./welcome-town-icon-192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "London_Click_icon_512.png",
+      "src": "./welcome-town-icon-512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
