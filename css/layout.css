@@ -1,0 +1,553 @@
+/****************************************************************
+
+Layout
+
+****************************************************************/
+
+#application{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    right:0;
+
+    bottom:40px;
+
+    background:#111;
+
+}
+
+
+#boardContainer{
+
+    position:absolute;
+    inset:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+#board{
+
+    display:block;
+    max-width:100%;
+    max-height:100%;
+    width:auto;
+    height:auto;
+    user-select:none;
+    -webkit-user-drag:none;
+    transform:scale(1.04);
+
+}
+
+#overlay{
+
+    position:absolute;
+    pointer-events:auto;
+
+}
+
+
+#btnMenu{
+
+    position:absolute;
+
+    top:15px;
+
+    right:15px;
+
+    width:60px;
+
+    height:60px;
+
+    font-size:30px;
+
+    background:white;
+
+    color:#333;
+
+    border-radius:50%;
+
+    box-shadow:
+
+        0 5px 20px rgba(0,0,0,.30);
+
+}
+
+
+#menuPanel{
+
+    position:absolute;
+
+    top:80px;
+
+    right:15px;
+
+    width:260px;
+
+    background:white;
+
+    color:#333;
+
+    padding:20px;
+
+    border-radius:12px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
+
+}
+
+
+#menuPanel h2{
+
+    margin-bottom:18px;
+
+}
+
+
+#menuPanel button{
+
+    width:100%;
+
+    margin-bottom:10px;
+
+    padding:12px;
+
+    background:#2d74c4;
+
+    color:white;
+
+    font-weight:600;
+
+}
+
+#menuPanel button:hover{
+
+    background:#1c5aa2;
+
+}
+
+/****************************************************************
+MENU
+****************************************************************/
+
+#menuHeader{
+
+    text-align:center;
+
+    margin-bottom:20px;
+
+}
+
+#logo{
+
+    width:200px;
+
+    margin-bottom:10px;
+
+}
+
+.subtitle{
+
+    font-size:13px;
+
+    color:#666;
+
+}
+
+.version{
+
+    font-size:12px;
+
+    color:#999;
+
+    margin-top:5px;
+
+}
+
+
+/****************************************************************
+STATUS BAR
+****************************************************************/
+
+#statusBar{
+
+    position:fixed;
+
+    left:0;
+
+    bottom:0;
+
+    width:100%;
+
+    height:40px;
+
+    background:#163b68;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 15px;
+
+    font-size:14px;
+
+    box-shadow:0 -2px 8px rgba(0,0,0,.25);
+
+}
+/****************************************************************
+TIMER
+****************************************************************/
+
+#timerPanel {
+
+    position:absolute;
+
+    width:430px;
+    padding:25px 30px 22px 30px;
+    background:#fffaf0;
+    color:#333;
+    border:3px solid #c79b4b;
+    border-radius:18px;
+    box-shadow:
+        0 8px 25px rgba(0,0,0,.35),
+        inset 0 0 0 2px rgba(255,255,255,.8);
+
+    text-align:center;
+
+    z-index:100;
+
+}
+
+/* ==============================================================
+   TITOLO
+   ============================================================== */
+
+#timerTitle {
+
+    position:relative;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    color:#704c20;
+
+    margin-bottom:12px;
+
+    padding-bottom:8px;
+
+    border-bottom:2px solid #d8bd87;
+
+}
+
+/* ==============================================================
+   DISPLAY
+   ============================================================== */
+
+#timerDisplay {
+    font-size:68px;
+    font-weight:bold;
+    letter-spacing:3px;
+    color:#163b68;
+    margin-bottom:12px;
+    padding:8px 18px;
+    background:#f5f0e5;
+    border:2px solid #d8bd87;
+    border-radius:12px;
+    box-shadow:
+        inset 0 2px 5px rgba(0,0,0,.12),
+        0 3px 6px rgba(0,0,0,.15);
+}
+
+/* ==============================================================
+   CORPO
+   ============================================================== */
+
+#timerMain {
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:28px;
+
+}
+
+
+/* ==============================================================
+   PARTE SINISTRA
+   ============================================================== */
+
+#timerLeft {
+
+    text-align:center;
+
+}
+
+/* ==============================================================
+   IMPOSTAZIONE TEMPO
+   ============================================================== */
+
+#timerControls {
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:5px;
+
+    font-size:15px;
+
+    text-align:left;
+
+}
+
+#timerControls label {
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:flex-end;
+
+    gap:6px;
+
+}
+
+#timerControls input {
+
+    width:55px;
+
+    padding:4px;
+
+    font-size:16px;
+
+    text-align:center;
+
+    border:1px solid #aaa;
+
+    border-radius:5px;
+
+}
+
+
+/* ==============================================================
+   PULSANTI
+   ============================================================== */
+
+#timerButtons {
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:7px;
+
+}
+
+#timerButtons button {
+
+    width:110px;
+
+    padding:8px 10px;
+
+    margin:0;
+
+    border:none;
+
+    border-radius:7px;
+
+    background:#2d74c4;
+
+    color:white;
+
+    font-size:14px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+}
+
+#timerButtons button:hover {
+
+    background:#1c5aa2;
+
+}
+
+
+/* ==============================================================
+   RESET
+   ============================================================== */
+
+#btnTimerReset {
+
+    margin-top:15px;
+
+    padding:7px 20px;
+
+    border:1px solid #aaa;
+
+    border-radius:7px;
+
+    background:#eee;
+
+    color:#444;
+
+    font-size:13px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+}
+#btnTimerReset:hover {
+
+    background:#ddd;
+
+}
+
+
+/* ==============================================================
+   CHIUSURA
+   ============================================================== */
+
+#btnTimerClose {
+
+    position:absolute;
+
+    top:-10px;
+
+    right:-10px;
+
+    width:30px !important;
+
+    height:30px;
+
+    margin:0 !important;
+
+    padding:0 !important;
+
+    border:2px solid white;
+
+    border-radius:50%;
+
+    background:#eee;
+
+    color:#555;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    line-height:26px;
+
+    cursor:pointer;
+
+}
+
+#btnTimerClose:hover {
+
+    background:#ddd;
+
+    color:#222;
+
+}
+#timerPanel.timer-finished {
+    animation: timerFinale 0.8s ease-in-out infinite alternate;
+}
+
+@keyframes timerFinale {
+
+    from {
+        transform: scale(1);
+        box-shadow:
+            0 8px 25px rgba(0,0,0,.35),
+            0 0 0 rgba(220,60,40,0);
+    }
+
+    to {
+        transform: scale(1.04);
+        box-shadow:
+            0 8px 25px rgba(0,0,0,.35),
+            0 0 30px rgba(220,60,40,.75);
+    }
+}
+/* =========================
+   COUNTDOWN FINALE
+   ========================= */
+
+#timerDisplay.timer-warning {
+    animation: timerPulse 1s ease-in-out infinite;
+}
+
+@keyframes timerPulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.12);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+/* =========================
+   TIMER TERMINATO
+   ========================= */
+
+#timerPanel.timer-finished {
+    animation: timerFinale 0.8s ease-in-out infinite alternate;
+}
+
+#timerPanel.timer-finished #timerDisplay {
+    animation: timerZero 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes timerFinale {
+
+    from {
+        transform: scale(1);
+        box-shadow:
+            0 8px 25px rgba(0,0,0,.35),
+            0 0 0 rgba(220,60,40,0);
+    }
+
+    to {
+        transform: scale(1.04);
+        box-shadow:
+            0 8px 25px rgba(0,0,0,.35),
+            0 0 35px rgba(220,60,40,.8);
+    }
+}
+
+@keyframes timerZero {
+
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.18);
+    }
+}
+#timerPanel.timer-finished #timerDisplay {
+    background: #f8d7da;
+    border-color: #c94c4c;
+    color: #9b1c1c;
+}

@@ -1,0 +1,13 @@
+directories:
+  output: build
+  buildResources: build
+appId: it.loca4students.giocoloca
+productName: Gioco dell'Lo.Ca.
+files:
+  - filter:
+      - '**/*'
+      - '!dist/**'
+      - '!node_modules/.cache/**'
+win:
+  target: portable
+electronVersion: 43.1.1

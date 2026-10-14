@@ -1,0 +1,671 @@
+[
+    {
+        "id": "AvIn",
+        "name": "Dado Avanti/Indietro 2 x 2",
+        "type": "images",
+
+        "faces": [
+            {
+                "id": "AVANTI1",
+                "text": null,
+                "value": 1,
+                "image": "Avanti.png",
+                "color1": "#eeeeee",
+                "color2": "#333333"            
+            },
+            {
+                "id": "INDIETRO1",
+                "text": null,
+                "value": 2,
+                "image": "Indietro.png",
+                "color1": "#eeeeee",
+                "color2": "#333333"            
+            }
+        ]
+    },
+
+    {
+        "id": "TIFOSI",
+        "name": "Tifosi",
+        "type": "colors",
+
+        "faces": [
+
+            {
+                "id": "ROSSONERI",
+                "text": "MILAN",
+                "value": 1,
+                "style": "VERTICALE",
+                "color1": "#d00000",
+                "color2": "#111111"
+            },
+
+            {
+                "id": "NERAZZURRI",
+                "text": "INTER",
+                "value": 2,
+                "style": "VERTICALE",
+                "color1": "#0066cc",
+                "color2": "#111111"
+            },
+
+            {
+                "id": "BIANCONERI",
+                "text": "JUVENTUS",
+                "value": 3,
+                "style": "VERTICALE",
+                "color1": "#ffffff",
+                "color2": "#111111"
+            },
+            {
+                "id": "GIALLOROSSI",
+                "text": "ROMA",
+                "value": 4,
+                "style": "BORDO",
+                "color1": "#FF0000",
+                "color2": "#FFCC00"
+            },
+            {
+                "id": "BIANCOAZZURRI",
+                "text": "LAZIO",
+                "value": 5,
+                "style": "BORDO",
+                "color1": "#CCFFFF",
+                "color2": "#ffffff"
+            },
+            {
+                "id": "AZZURRI",
+                "text": "NAPOLI",
+                "value": 6,
+                "style": "BORDO",
+                "color1": "#00CCFF",
+                "color2": "#CCFFFF"
+            },
+            {
+                "id": "GRANATA",
+                "text": "TORINO",
+                "value": 7,
+                "style": "BORDO",
+                "color1": "#800000",
+                "color2": "#ffffff"
+            }
+
+        ]
+    },
+    {
+        "id": "SEMAFORO",
+        "name": "Tre Colori Semaforo",
+        "type": "colors",
+
+        "faces": [
+
+            {
+                "id": "VERDE",
+                "text": null,
+                "value": 1,
+                "style": "SOLID",
+                "color1": "#2e9d45",
+                "color2": "#1f6b2f"
+            },
+
+            {
+                "id": "ROSSO",
+                "text": null,
+                "value": 2,
+                "style": "SOLID",
+                "color1": "#d62828",
+                "color2": "#8b0000"
+            },
+
+            {
+                "id": "GIALLO",
+                "text": null,
+                "value": 3,
+                "style": "SOLID",
+                "color1": "#f2c230",
+                "color2": "#b8860b"
+            }
+
+        ]
+    },
+
+    {
+        "id": "DIREZIONI",
+        "name": "Tre Direzioni (P duplicato)",
+        "type": "colors",
+
+        "faces": [
+
+            {
+                "id": "SX",
+                "text": null,
+                "value": 1,
+                "image": "Sx.png",
+                "style": "SOLID",
+                "color1": "#0000FF",
+                "color2": "#C0C0C0"
+            },
+
+            {
+                "id": "DX",
+                "text": null,
+                "value": 2,
+                "image": "Ponte.png",
+                "style": "SOLID",
+                "color1": "#0000FF",
+                "color2": "#C0C0C0"
+            },
+
+            {
+                "id": "PARK",
+                "text": null,
+                "value": 3,
+                "image": "Park.png",
+                "style": "SOLID",
+                "color1": "#0000FF",
+                "color2": "#C0C0C0"
+            },
+            {
+                "id": "PARK2",
+                "text": null,
+                "value": 4,
+                "image": "Park.png",
+                "style": "SOLID",
+                "color1": "#0000FF",
+                "color2": "#C0C0C0"
+            }
+
+        ]
+    },
+    {
+        "id": "PRIGIONE",
+        "name": "2 Possibilità (Ricorso Bocciato x 3 - Ritenta x 2)",
+        "type": "colors",
+
+        "faces": [
+
+            {
+                "id": "EVASO",
+                "text": null,
+                "value": 1,
+                "image": "Evasione.png",
+                "style": "SOLID",
+                "color1": "#C0C0C0",
+                "color2": "#0000FF"
+            },
+
+            {
+                "id": "RESPINTO",
+                "text": null,
+                "value": 2,
+                "image": "Respinto.png",
+                "style": "SOLID",
+                "color1": "#C0C0C0",
+                "color2": "#0000FF"
+            },
+
+            {
+                "id": "AMNISTIA",
+                "text": null,
+                "value": 3,
+                "image": "Amnistia.png",
+                "style": "SOLID",
+                "color1": "#C0C0C0",
+                "color2": "#0000FF"
+            },
+            {
+                "id": "RESPINTO2",
+                "text": null,
+                "value": 4,
+                "image": "Respinto.png",
+                "style": "SOLID",
+                "color1": "#C0C0C0",
+                "color2": "#0000FF"
+            },
+            {
+                "id": "RITENTA",
+                "text": null,
+                "value": 5,
+                "image": "RitentaEvasione.png",
+                "style": "SOLID",
+                "color1": "#C0C0C0",
+                "color2": "#0000FF"
+            },
+            {
+                "id": "RESPINTO3",
+                "text": null,
+                "value": 6,
+                "image": "Respinto.png",
+                "style": "SOLID",
+                "color1": "#C0C0C0",
+                "color2": "#0000FF"
+            },
+                        {
+                "id": "RITENTA2",
+                "text": null,
+                "value": 7,
+                "image": "RitentaEvasione.png",
+                "style": "SOLID",
+                "color1": "#C0C0C0",
+                "color2": "#0000FF"
+            }
+
+        ]
+    },
+    {
+        "id": "MVSF",
+        "name": "5 Calcoli",
+        "type": "colors",
+
+        "faces": [
+
+            {
+                "id": "M-F",
+                "text": null,
+                "value": 1,
+                "image": "M-F.png",
+                "style": "SOLID",
+                "color1": "#333333",
+                "color2": "#FF9900"
+            },
+
+            {
+                "id": "F-M",
+                "text": null,
+                "value": 2,
+                "image": "F-M.png",
+                "style": "SOLID",
+                "color1": "#333333",
+                "color2": "#FF9900"
+            },
+
+            {
+                "id": "2M-F",
+                "text": null,
+                "value": 3,
+                "image": "2M-F.png",
+                "style": "SOLID",
+                "color1": "#333333",
+                "color2": "#FF9900"
+            },
+            {
+                "id": "F-2M",
+                "text": null,
+                "value": 4,
+                "image": "F-2M.png",
+                "style": "SOLID",
+                "color1": "#333333",
+                "color2": "#FF9900"
+            },
+            {
+                "id": "M-2F",
+                "text": null,
+                "value": 5,
+                "image": "M-2F.png",
+                "style": "SOLID",
+                "color1": "#333333",
+                "color2": "#FF9900"
+            }
+        ]
+    },
+
+    {
+        "id": "PLAYER_ALL",
+        "name": "Selettore TUTTI Giocatori",
+        "scope":"ALL",
+        "type": "players",
+        "textSize": 80
+    },
+
+    {
+        "id": "PLAYER_SULLA_CELLA",
+        "name": "Selettore Giocatori Presenti nella stessa cella",
+        "scope":"CELL",
+        "type": "players",
+        "textSize": 80
+    },
+    
+    {
+        "id": "CELL_RANDOM",
+        "name": "Selettore Casella Casuale",
+        "scope": "CELL",
+        "type": "randomCell",
+        "textSize": 80
+    },
+
+    {
+        "id": "SCEGLITEM",
+        "name": "Sceglie dove andare",
+        "type": "numbers",
+
+        "faces": [
+
+            {
+                "id": "1",
+                "text": "UNO",
+                "value": 1,
+                "image": null,
+                "style": "SOLID",
+                "color1": "#FF0000",
+                "color2": "#FFFFFF"
+            },
+
+            {
+                "id": "2",
+                "text": "DUE",
+                "value": 2,
+                "image": null,
+                "style": "SOLID",
+                "color1": "#FF0000",
+                "color2": "#FFFFFF"
+            },
+
+            {
+                "id": "3",
+                "text": "TRE",
+                "value": 3,
+                "image": null,
+                "style": "SOLID",
+                "color1": "#FF0000",
+                "color2": "#FFFFFF"
+            },
+            {
+                "id": "4",
+                "text": "QUATTRO",
+                "value": 3,
+                "image": null,
+                "style": "SOLID",
+                "color1": "#FF0000",
+                "color2": "#FFFFFF"
+            },
+            {
+                "id": "5",
+                "text": "CINQUE",
+                "value": 3,
+                "image": null,
+                "style": "SOLID",
+                "color1": "#FF0000",
+                "color2": "#FFFFFF"
+            },
+            {
+                "id": "3",
+                "text": "TRE",
+                "value": 3,
+                "image": null,
+                "style": "SOLID",
+                "color1": "#FF0000",
+                "color2": "#FFFFFF"
+            },
+            {
+                "id": "3",
+                "text": "TRE",
+                "value": 3,
+                "image": null,
+                "style": "SOLID",
+                "color1": "#FF0000",
+                "color2": "#FFFFFF"
+            },
+            {
+                "id": "8",
+                "text": "8",
+                "value": 8,
+                "image": null,
+                "style": "SOLID",
+                "color1": "#FF0000",
+                "color2": "#FFFFFF"
+            },
+            {
+                "id": "9",
+                "text": "9",
+                "value": 9,
+                "image": null,
+                "style": "SOLID",
+                "color1": "#FF0000",
+                "color2": "#FFFFFF"
+            },
+            {
+                "id": "10",
+                "text": "10",
+                "value": 10,
+                "image": null,
+                "style": "SOLID",
+                "color1": "#8b0000",
+                "color2": "#FFFFFF"
+            },
+            {
+                "id": "11",
+                "text": "11",
+                "value": 11,
+                "image": null,
+                "style": "SOLID",
+                "color1": "#8b0000",
+                "color2": "#FFFFFF"
+            },
+            {
+                "id": "12",
+                "text": "12",
+                "value": 12,
+                "image": null,
+                "style": "SOLID",
+                "color1": "#8b0000",
+                "color2": "#FFFFFF"
+            },
+            {
+                "id": "13",
+                "text": "13",
+                "value": 13,
+                "image": null,
+                "style": "SOLID",
+                "color1": "#8b0000",
+                "color2": "#FFFFFF"
+            },
+            {
+                "id": "14",
+                "text": "14",
+                "value": 14,
+                "image": null,
+                "style": "SOLID",
+                "color1": "#8b0000",
+                "color2": "#FFFFFF"
+            },
+            {
+                "id": "15",
+                "text": "15",
+                "value": 15,
+                "image": null,
+                "style": "SOLID",
+                "color1": "#8b0000",
+                "color2": "#FFFFFF"
+            },
+            {
+                "id": "16",
+                "text": "16",
+                "value": 16,
+                "image": null,
+                "style": "SOLID",
+                "color1": "#8b0000",
+                "color2": "#FFFFFF"
+            }
+
+        ]
+    },
+
+    {
+        "id": "DADODUE",
+        "name": "Secondo Dado",
+        "type": "numbers",
+
+        "faces": [
+
+            {
+                "id": "1",
+                "text": "UNO",
+                "value": 1,
+                "image": "Uno.png",
+                "style": "SOLID",
+                "color1": "#FFFFFF",
+                "color2": "#8b0000"
+            },
+
+            {
+                "id": "2",
+                "text": "DUE",
+                "value": 2,
+                "image": "Due.png",
+                "style": "SOLID",
+                "color1": "#FFFFFF",
+                "color2": "#8b0000"
+            },
+
+            {
+                "id": "-2",
+                "text": "Meno DUE",
+                "value": 3,
+                "image": "MenoDue.png",
+                "style": "SOLID",
+                "color1": "#FFFFFF",
+                "color2": "#8b0000"
+            }
+
+        ]
+    },
+    
+    {
+        "__comment": "DA QUI da SISTEMARE o NON USATI"
+    },
+
+    {
+        "id": "NUMERI",
+        "name": "Dado Numeri",
+        "type": "numbers",
+
+        "faces": [
+
+            {
+                "id": "UNO",
+                "text": "1",
+                "value": 1,
+                "image": null
+            },
+
+            {
+                "id": "DUE",
+                "text": "2",
+                "value": 2,
+                "image": null
+            },
+
+            {
+                "id": "TRE",
+                "text": "3",
+                "value": 3,
+                "image": null
+            },
+
+            {
+                "id": "QUATTRO",
+                "text": "4",
+                "value": 4,
+                "image": null
+            },
+
+            {
+                "id": "CINQUE",
+                "text": "5",
+                "value": 5,
+                "image": null
+            },
+
+            {
+                "id": "SEI",
+                "text": "6",
+                "value": 6,
+                "image": null
+            }
+
+        ]
+    },
+
+    {
+        "id": "IMG3",
+        "name": "Dado 3 Animali",
+        "type": "images",
+
+        "faces": [
+
+            {
+                "id": "CANE",
+                "text": null,
+                "value": 1,
+                "image": "cane.png"
+            },
+
+            {
+                "id": "GATTO",
+                "text": null,
+                "value": 2,
+                "image": "gatto.png"
+            },
+
+            {
+                "id": "LEONE",
+                "text": null,
+                "value": 3,
+                "image": "leone.png"
+            }
+
+        ]
+    },
+
+    {
+        "id": "SALTINMENTE",
+        "name": "Argomenti",
+        "type": "txt",
+
+        "faces": [
+
+            {
+                "id": "UNO",
+                "text": "Animali con 4 zampe",
+                "value": 1,
+                "image": null
+            },
+
+            {
+                "id": "DUE",
+                "text": "Città",
+                "value": 2,
+                "image": null
+            },
+
+            {
+                "id": "TRE",
+                "text": "Stati Europa",
+                "value": 3,
+                "image": null
+            },
+
+            {
+                "id": "QUATTRO",
+                "text": "Stati Africa",
+                "value": 4,
+                "image": null
+            },
+
+            {
+                "id": "CINQUE",
+                "text": "Flora",
+                "value": 5,
+                "image": null
+            },
+
+            {
+                "id": "SEI",
+                "text": "Frutta",
+                "value": 6,
+                "image": null
+            }
+
+        ]
+    }
+]

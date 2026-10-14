@@ -1,0 +1,105 @@
+/*==================================================
+  LAGHETTO
+==================================================*/
+#laghettoPanel {
+    pointer-events: none;
+}
+
+#OLDlaghettoPanel{
+
+    position:absolute;
+
+    left:170px;
+    top:120px;
+
+    width:300px;
+    height:180px;
+
+    background:transparent;
+
+    border:none;
+
+    border-radius:0;
+
+    box-shadow:none;
+
+    display:none;
+
+    z-index:500;
+
+}
+
+#laghettoTitle{
+
+    text-align:center;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    color:#165b84;
+
+    margin-top:12px;
+
+}
+/*==================================================
+  PEDINE nel LAGHETTO
+==================================================*/
+#laghettoBody {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 42px);
+
+    gap: 15px;
+
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+
+    width:100%;
+    height:100%;
+
+    padding:0;
+
+}
+
+.laghettoPawn{
+
+    width:42px;
+    height:42px;
+
+    border-radius:50%;
+
+    border:3px solid white;
+
+    box-shadow:0 2px 6px rgba(0,0,0,.35);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.laghettoPawn.selected{
+    transform: scale(1.18);
+    border:4px solid black;
+}
+
+.laghettoNumber{
+
+    color:white;
+
+    font-size:26px;
+
+    font-weight:bold;
+
+    font-family:Arial, sans-serif;
+
+    text-shadow:
+        1px 1px 2px black,
+       -1px -1px 2px black;
+
+    user-select:none;
+
+}
