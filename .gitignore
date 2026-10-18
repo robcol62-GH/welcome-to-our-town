@@ -3,3 +3,4 @@ dist/
 build/
 .DS_Store
 Thumbs.db
+data/Js2Xls.xlsm
