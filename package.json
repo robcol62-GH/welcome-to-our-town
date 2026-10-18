@@ -1,0 +1,42 @@
+{
+  "name": "londonweb",
+  "productName": "London Click",
+  "version": "1.0.0",
+  "description": "London Click",
+  "author": "Lo.Ca. 4 Students",
+  "main": "main.js",
+  "type": "commonjs",
+  "license": "ISC",
+
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win portable"
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robcol62-gh/London.git"
+  },
+
+  "build": {
+    "appId": "it.loca4students.london",
+    "productName": "London Click",
+    "directories": {
+      "output": "build"
+    },
+
+    "files": [
+      "**/*",
+      "!dist/**",
+      "!node_modules/.cache/**"
+    ],
+    "win": {
+      "target": "portable"
+    }
+  },
+
+  "devDependencies": {
+    "electron": "^43.1.1",
+    "electron-builder": "^26.15.3"
+  }
+}

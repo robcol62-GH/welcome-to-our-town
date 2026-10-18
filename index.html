@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+
+<html lang="it">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Welcome to our Town</title>
+
+    <link rel="stylesheet" href="css/playerSetup.css?v=20260924172420">
+    <link rel="stylesheet" href="css/style.css?v=20260924172420">
+    <link rel="stylesheet" href="css/layout.css?v=20260924172420">
+    <link rel="stylesheet" href="css/popup.css?v=20260924172420">
+    <link rel="stylesheet" href="css/laghetto.css?v=20260924172420">
+    <link rel="stylesheet" href="css/dice.css?v=20260924172420">
+    <link rel="icon" type="image/png" href="images/icon.png">
+    <link rel="icon" type="image/x-icon" href="london_icon.ico">
+    <link rel="manifest" href="manifest.json">
+    
+</head>
+
+<body>
+
+    <div id="evaluatorPanel" class="hidden">
+
+        <div id="evaluatorTitle">
+            <span>🚦 VALUTAZIONE</span>
+        </div>
+
+        <div id="evaluatorButtons">
+
+            <button id="btnEvaluateGreen" title="Descrizione corretta">
+                VERDE
+            </button>
+
+            <button id="btnEvaluateYellow" title="Descrizione parzialmente corretta">
+                GIALLO
+            </button>
+
+            <button id="btnEvaluateRed" title="Descrizione da migliorare">
+                ROSSO
+            </button>
+
+        </div>
+
+    </div>
+
+    <div id="laghettoPanel">
+
+        <!--
+        <div id="laghettoTitle">
+            ðŸª¿ LAGHETTO
+        </div>
+        -->
+        
+        <div id="laghettoBody">
+
+        </div>
+
+    </div>
+
+    <div id="playerSetup">
+        <div id="playerSetupBox">
+
+            <h1>Welcome to our Town</h1>
+
+            <p>Quanti giocatori partecipano?</p>
+
+            <div id="playerChoices"></div>
+
+        </div>
+    </div>
+
+    <main id="application">
+
+        <section id="boardContainer">
+
+            <img
+                id="board"
+                src="images/tabellone.png"
+                alt="Tabellone">
+
+            <svg
+                id="overlay"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 1000 1000"
+                preserveAspectRatio="none">
+
+            </svg>
+            <div id="timerPanel" class="hidden">
+
+                <div id="timerTitle">
+
+                    <span>⏱ TIMER</span>
+
+                    <button id="btnTimerClose">✕</button>
+
+                </div>
+
+                <div id="timerMain">
+
+                    <div id="timerLeft">
+
+                        <div id="timerDisplay">
+                            01:00
+                        </div>
+
+                        <div id="timerControls">
+
+                            <label>
+                                Minuti:
+                                <input
+                                    id="timerMinutes"
+                                    type="number"
+                                    min="0"
+                                    max="99"
+                                    value="1">
+                            </label>
+
+                            <label>
+                                Secondi:
+                                <input
+                                    id="timerSeconds"
+                                    type="number"
+                                    min="0"
+                                    max="59"
+                                    value="0">
+                            </label>
+
+                        </div>
+                    </div>
+
+                    <div id="timerButtons">
+
+                        <button id="btnTimerStart">
+                            ▶ AVVIA
+                        </button>
+
+                        <button id="btnTimerPause">
+                            ⏸ PAUSA
+                        </button>
+
+                        <button id="btnTimerResume">
+                            ▶ RIPRENDI
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <button id="btnTimerReset">
+                    ↻ RESET
+                </button>
+
+            </div>
+            <div id="dicePanel" class="hidden">
+
+                <div id="diceResult">
+
+                    <div class="diceScene">
+
+                        <div id="diceCube">
+
+                            <div class="diceFace diceFront"><span>5</span></div>
+                            <div class="diceFace diceBack"><span>2</span></div>
+                            <div class="diceFace diceRight"><span>6</span></div>
+                            <div class="diceFace diceLeft"><span>3</span></div>
+                            <div class="diceFace diceTop"><span>4</span></div>
+                            <div class="diceFace diceBottom"><span>1</span></div>
+
+                        </div>
+
+                    </div>
+
+                    <div id="diceTrack"></div>
+
+                </div>
+
+                <div id="diceButtons">
+
+                    <button id="btnDiceClose2">
+                        CHIUDI
+                    </button>
+
+                    <button id="btnDiceRoll">
+                        🎲 LANCIA
+                    </button>
+
+                </div>
+
+            </div>
+        </section>
+
+        <button id="btnMenu" title="Menu">
+
+            ⚙
+
+        </button>
+        <aside id="menuPanel" class="hidden">
+
+            <div id="menuHeader">
+
+            <img
+                id="logo"
+                src="images/logo.png"
+                alt="Logo Prodotto">
+
+            <h2>Welcome to our Town</h2>
+
+            <p class="subtitle">
+
+                by Lo.Ca. 4 Students
+
+            </p>
+
+            <p class="version">
+
+                Versione 0.1.0
+
+            </p>
+
+            </div>
+
+            <button id="btnConfig">
+                Configura Caselle
+            </button>
+
+            <button id="btnNumbers">
+                Mostra Numeri
+            </button>
+
+            <button id="btnExport">
+                Esporta JSON
+            </button>
+            <button id="btnNewGame">
+                Start
+            </button>
+            <button id="btnTimer">
+                ⏱ Timer
+            </button>
+            <button id="btnDice">
+                🎲 Dice
+            </button>
+            <hr><br>
+
+            <button id="btnFullscreen">
+                Fullscreen Mode
+            </button>
+
+        </aside>
+
+    </main>
+
+
+    <footer id="statusBar">
+
+        <span id="statusMessage">
+
+            🟢 Pronto
+
+        </span>
+
+        <span id="statusVersion">
+
+            Welcome to our Town v0.1.0
+
+        </span>
+
+    </footer>
+    <audio id="timerSound" preload="auto">
+        <source src="audio/Campanella.mp3" type="audio/mpeg">
+    </audio>
+    <script src="js/Popup.js?v=20260924172420"></script>
+    <script src="js/game.js?v=20260924172420"></script>
+    <script src="js/Board.js?v=20260924172420"></script>
+    <script src="js/Renderer.js?v=20260924172420"></script>
+    <script src="js/Config.js?v=20260924172420"></script>
+    <script src="js/PlayerSetup.js?v=20260924172420"></script>
+    <script src="js/utils.js?v=20260924172420"></script>
+    <script src="js/storage.js?v=2"></script>
+    <script src="js/UI.js?v=20260924172420"></script>
+    <script src="js/Player.js?v=20260924172420"></script>
+    <script src="js/Dice.js?v=20260924172420"></script>
+    <script src="js/events.js?v=20260924172420"></script>
+    <script src="js/app.js?v=20260924172420"></script>
+    <script src="js/Director.js?v=20260924172420"></script>
+    <script src="js/laghetto.js?v=20260924172420"></script>    
+
+
+</body>
+
+</html>
+
+
+

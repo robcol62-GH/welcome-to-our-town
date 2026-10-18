@@ -1,0 +1,89 @@
+#playerSetup {
+
+    position: fixed;
+
+    inset: 0;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: rgba(0, 0, 0, 0.75);
+
+    z-index: 10000;
+
+}
+
+
+#playerSetupBox {
+
+    background: white;
+
+    padding: 35px 50px;
+
+    border-radius: 16px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+
+}
+
+
+#playerSetupBox h1 {
+
+    margin-top: 0;
+
+}
+
+
+#playerSetupBox p {
+
+    font-size: 20px;
+
+    margin-bottom: 25px;
+
+}
+
+
+#playerChoices {
+
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 8px;
+
+    margin-top: 15px;
+
+}
+
+
+#playerChoices button {
+
+    width: 60px;
+
+    height: 60px;
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    border-radius: 50%;
+
+    border: 3px solid #333;
+
+    background: white;
+
+}
+
+
+#playerChoices button:hover {
+
+    transform: scale(1.1);
+
+}

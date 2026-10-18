@@ -1,0 +1,8 @@
+[
+    {
+        "id": "CROWDING",
+        "txt": null,
+        "image": "Folla.png",
+        "selector": "PLAYER_SULLA_CELLA"
+    }
+]
