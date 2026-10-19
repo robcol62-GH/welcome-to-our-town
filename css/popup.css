@@ -663,33 +663,30 @@ position:absolute;
     }
 
 }
+
 /*==================================================
-  PALLINA ANIMAZIONE SELETTORE
+  CONTENITORE ANIMAZIONE SELETTORE E MARKER VOLANTE
 ==================================================*/
 
-.selectorBall{
 
-    position:fixed;
-
-    width:250px;
-    height:250px;
-
-    border-radius:50%;
-
-    background:
-        radial-gradient(
-            circle at 32% 28%,
-            #ffffff 0%,
-            #eeeeee 12%,
-            var(--selector-color) 35%,
-            var(--selector-color) 70%,
-            #222222 100%
-        );
-
-    z-index:99999;
-
-    pointer-events:none;
-
+.selectorBall {
+    position: fixed;
+    width: 250px;
+    height: 250px;
+    z-index: 99999;
+    pointer-events: none;
+    border-radius: 50%;
+    background: radial-gradient(
+        circle at 32% 28%,
+        #ffffff 0%,
+        #eeeeee 12%,
+        var(--selector-color) 35%,
+        var(--selector-color) 70%,
+        #222222 100%
+    );
+    border: none;
+    box-shadow: none;
+    overflow: visible;
 }
 
 @keyframes selectorAppear{

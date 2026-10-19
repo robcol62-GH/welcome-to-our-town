@@ -516,7 +516,7 @@ const Renderer = {
 
         const x = point.x + offsetX;
         // SPOSTAMENTO VERTICALE DEL TURISTA
-        const TURISTA_OFFSET_Y = 55;
+        const TURISTA_OFFSET_Y = 5;
         const y = point.y + TURISTA_OFFSET_Y;
         const dimensione = Config.TOKEN_SIZE;
 

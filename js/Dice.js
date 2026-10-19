@@ -108,35 +108,21 @@
     },
 
     async animateBall(ball, diceId, cell) {
-        
         const dice = this.get(diceId);
-        const rolls = 10;
+        const rolls = 20;
+        const delay = 250;
 
-        const delays = [
-            220,
-            200,
-            190,
-            180,
-            180,
-            180,
-            180,
-            180,
-            200,
-            210
-        ];
         let finalFace = null;
         let previousFace = null;
 
         for (let i = 0; i < rolls; i++) {
-
             finalFace = this.roll(diceId, cell, previousFace);
             previousFace = finalFace;
-            this.showBallFace(ball, finalFace, dice );
+            this.showBallFace(ball, finalFace, dice);
 
             await new Promise(resolve =>
-                setTimeout(resolve, delays[i])
+                setTimeout(resolve, delay)
             );
-
         }
 
         return finalFace;

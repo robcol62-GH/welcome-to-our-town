@@ -11,7 +11,7 @@
             "txt": null,
             "video": null,
             "audio": null,
-            "selector": "CELL_RANDOM"
+            "selector": "DIREZIONI"
         },
         {
             "id": 1,
@@ -23,7 +23,7 @@
             "txt": null,
             "video": null,
             "audio": null,
-            "selector": "CELL_RANDOM"
+            "selector": "DIREZIONI"
         },
         {
             "id": 2,
@@ -35,7 +35,7 @@
             "txt": null,
             "video": null,
             "audio": null,
-            "selector": "CELL_RANDOM"
+            "selector": "DIREZIONI"
         },
         {
             "id": 3,
@@ -47,7 +47,7 @@
             "txt": null,
             "video": null,
             "audio": null,
-            "selector": "CELL_RANDOM"
+            "selector": "DIREZIONI"
         },
         {
             "id": 4,
@@ -59,7 +59,7 @@
             "txt": null,
             "video": null,
             "audio": null,
-            "selector": "CELL_RANDOM"
+            "selector": "DIREZIONI"
         },
         {
             "id": 5,
@@ -71,19 +71,19 @@
             "txt": null,
             "video": null,
             "audio": null,
-            "selector": "CELL_RANDOM"
+            "selector": "DIREZIONI"
         },
         {
             "id": 6,
             "position": {
                 "x": 0.8756565933103164,
-                "y": 0.6564857575403288
+                "y": 0.6564857575403350
             },
             "image": null,
             "txt": null,
             "video": null,
             "audio": null,
-            "selector": "CELL_RANDOM"
+            "selector": "DIREZIONI"
         },
         {
             "id": 7,
@@ -95,7 +95,7 @@
             "txt": null,
             "video": null,
             "audio": null,
-            "selector": "CELL_RANDOM"
+            "selector": "DIREZIONI"
         },
         {
             "id": 8,
@@ -107,7 +107,7 @@
             "txt": null,
             "video": null,
             "audio": null,
-            "selector": "CELL_RANDOM"
+            "selector": "DIREZIONI"
         },
         {
             "id": 9,
@@ -119,7 +119,7 @@
             "txt": null,
             "video": null,
             "audio": null,
-            "selector": "CELL_RANDOM"
+            "selector": "DIREZIONI"
         },
         {
             "id": 10,
@@ -131,7 +131,7 @@
             "txt": null,
             "video": null,
             "audio": null,
-            "selector": "CELL_RANDOM"
+            "selector": "DIREZIONI"
         },
         {
             "id": 11,
@@ -143,7 +143,7 @@
             "txt": null,
             "video": null,
             "audio": null,
-            "selector": "CELL_RANDOM"
+            "selector": "DIREZIONI"
         },
         {
             "id": 12,
@@ -155,7 +155,7 @@
             "txt": null,
             "video": null,
             "audio": null,
-            "selector": "CELL_RANDOM"
+            "selector": "DIREZIONI"
         },
         {
             "id": 13,
@@ -167,7 +167,7 @@
             "txt": null,
             "video": null,
             "audio": null,
-            "selector": "CELL_RANDOM"
+            "selector": "DIREZIONI"
         },
         {
             "id": 14,
@@ -179,7 +179,7 @@
             "txt": null,
             "video": null,
             "audio": null,
-            "selector": "CELL_RANDOM"
+            "selector": "DIREZIONI"
         },
         {
             "id": 15,
@@ -191,7 +191,7 @@
             "txt": null,
             "video": null,
             "audio": null,
-            "selector": "CELL_RANDOM"
+            "selector": "DIREZIONI"
         },
         {
             "id": 16,
@@ -203,7 +203,7 @@
             "txt": null,
             "video": null,
             "audio": null,
-            "selector": "CELL_RANDOM"
+            "selector": "DIREZIONI"
         },
         {
             "id": 17,
@@ -215,7 +215,7 @@
             "txt": null,
             "video": null,
             "audio": null,
-            "selector": "CELL_RANDOM"
+            "selector": "DIREZIONI"
         },
         {
             "id": 18,
@@ -227,7 +227,7 @@
             "txt": null,
             "video": null,
             "audio": null,
-            "selector": "CELL_RANDOM"
+            "selector": "DIREZIONI"
         },
         {
             "id": 19,
@@ -239,7 +239,7 @@
             "txt": null,
             "video": null,
             "audio": null,
-            "selector": "CELL_RANDOM"
+            "selector": "DIREZIONI"
         },
         {
             "id": 20,
@@ -251,7 +251,7 @@
             "txt": null,
             "video": null,
             "audio": null,
-            "selector": "CELL_RANDOM"
+            "selector": "DIREZIONI"
         },
         {
             "id": 21,
@@ -263,7 +263,7 @@
             "txt": null,
             "video": null,
             "audio": null,
-            "selector": "CELL_RANDOM"
+            "selector": "DIREZIONI"
         },
         {
             "id": 22,
@@ -275,7 +275,7 @@
             "txt": null,
             "video": null,
             "audio": null,
-            "selector": "CELL_RANDOM"
+            "selector": "DIREZIONI"
         },
         {
             "id": 23,
@@ -287,7 +287,7 @@
             "txt": null,
             "video": null,
             "audio": null,
-            "selector": "CELL_RANDOM"
+            "selector": "DIREZIONI"
         },
         {
             "id": 24,
@@ -299,7 +299,7 @@
             "txt": null,
             "video": null,
             "audio": null,
-            "selector": "CELL_RANDOM"
+            "selector": "DIREZIONI"
         },
         {
             "id": 25,
@@ -311,7 +311,7 @@
             "txt": null,
             "video": null,
             "audio": null,
-            "selector": "CELL_RANDOM"
+            "selector": "DIREZIONI"
         }
     ]
 }

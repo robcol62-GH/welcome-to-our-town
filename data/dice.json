@@ -131,7 +131,7 @@
 
     {
         "id": "DIREZIONI",
-        "name": "Tre Direzioni (P duplicato)",
+        "name": "14 Direzioni",
         "type": "colors",
 
         "faces": [
@@ -150,7 +150,7 @@
                 "id": "DX",
                 "text": null,
                 "value": 2,
-                "image": "Ponte.png",
+                "image": "Dx.png",
                 "style": "SOLID",
                 "color1": "#0000FF",
                 "color2": "#C0C0C0"
@@ -166,15 +166,104 @@
                 "color2": "#C0C0C0"
             },
             {
-                "id": "PARK2",
+                "id": "SU",
                 "text": null,
                 "value": 4,
-                "image": "Park.png",
+                "image": "Su.png",
                 "style": "SOLID",
                 "color1": "#0000FF",
                 "color2": "#C0C0C0"
+            },
+            {
+                "id": "GIU",
+                "text": null,
+                "value": 5,
+                "image": "Su.png",
+                "style": "SOLID",
+                "color1": "#0000FF",
+                "color2": "#C0C0C0"
+            },
+            {
+                "id": "SUGIU",
+                "text": null,
+                "value": 6,
+                "image": "SuGiu.png",
+                "style": "SOLID",
+                "color1": "#0000FF",
+                "color2": "#C0C0C0"
+            },
+            {
+                "id": "SXDX",
+                "text": null,
+                "value": 7,
+                "image": "SxDx.png",
+                "style": "SOLID",
+                "color1": "#0000FF",
+                "color2": "#C0C0C0"
+            },
+            {
+                "id": "SXSU",
+                "text": null,
+                "value": 8,
+                "image": "SxSu.png",
+                "style": "SOLID",
+                "color1": "#0000FF",
+                "color2": "#C0C0C0"
+            },
+            {
+                "id": "SXSU2",
+                "text": null,
+                "value": 9,
+                "image": "SxSu.png",
+                "style": "SOLID",
+                "color1": "#0000FF",
+                "color2": "#C0C0C0"
+            },
+            {
+                "id": "INCROCIO",
+                "text": null,
+                "value": 10,
+                "image": "Incrocio.png",
+                "style": "SOLID",
+                "color1": "#0000FF",
+                "color2": "#C0C0C0"
+            },
+            {
+                "id": "STOP",
+                "text": null,
+                "value": 11,
+                "image": "Stop.png",
+                "style": "SOLID",
+                "color1": "#FF0000",
+                "color2": "#C0C0C0"
+            },
+            {
+                "id": "DIVIETO",
+                "text": null,
+                "value": 12,
+                "image": "Divieto.png",
+                "style": "SOLID",
+                "color1": "#FF0000",
+                "color2": "#C0C0C0"
+            },
+            {
+                "id": "SENSOUNICO",
+                "text": null,
+                "value": 13,
+                "image": "SensoUnico.png",
+                "style": "SOLID",
+                "color1": "#FFFFFF",
+                "color2": "#C0C0C0"
+            },
+            {
+                "id": "PEDONI",
+                "text": null,
+                "value": 14,
+                "image": "Pedoni.png",
+                "style": "SOLID",
+                "color1": "#FFFFFF",
+                "color2": "#C0C0C0"
             }
-
         ]
     },
     {

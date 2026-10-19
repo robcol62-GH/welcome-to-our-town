@@ -8,6 +8,9 @@
 
         const oldBall = document.querySelector(".selectorBall");
         if (oldBall) oldBall.remove();
+        console.log("LAUNCH SELECTOR AVVIATO");
+console.log("CELLA:", cell);
+console.log("START ELEMENT:", startElement);
 
         const rect = startElement.getBoundingClientRect();
         const startX = rect.left + rect.width / 2;
@@ -30,13 +33,76 @@
             ball.remove();
             return;
         }
-
-        Game.destinationCell = finalFace;
+        const destinazioniDisponibili = Game.cells.filter(
+            c => c.id !== 0 && c.id !== cell.id
+        );
+        const destinazione = destinazioniDisponibili[
+            Math.floor(Math.random() * destinazioniDisponibili.length)
+        ];
+        if (!destinazione) {
+            ball.remove();
+            return;
+        }
+        Game.destinationCell = destinazione;
         Game.routePending = true;
 
-        Game.log(`Destinazione estratta: ${finalFace.id}`);
+        Game.log(`Destinazione estratta: ${destinazione.id}`);
 
-        const duration = 1900;
+        // Sostituisce l'immagine del selettore con il marker Maps
+        ball.innerHTML = "";
+        ball.style.background = "transparent";
+        ball.style.borderRadius = "0";
+        ball.style.width = "120px";
+        ball.style.height = "150px";        
+        ball.style.border = "none";
+        ball.style.boxShadow = "none";
+        ball.style.outline = "none";
+
+        const pinSvg = document.createElementNS(
+            "http://www.w3.org/2000/svg",
+            "svg"
+        );
+
+        pinSvg.setAttribute("width", "120");
+        pinSvg.setAttribute("height", "150");
+        pinSvg.setAttribute("viewBox", "-25 -35 50 70");
+        pinSvg.style.background = "transparent";
+        pinSvg.style.display = "block";
+        pinSvg.style.backgroundColor = "transparent";
+        pinSvg.style.border = "none";
+        pinSvg.style.boxShadow = "none";        
+        pinSvg.style.overflow = "visible";
+
+        const pin = document.createElementNS(
+            "http://www.w3.org/2000/svg",
+            "path"
+        );
+
+        pin.setAttribute(
+            "d",
+            "M 0 30 C -5 22 -20 9 -20 -5 A 20 20 0 1 1 20 -5 C 20 9 5 22 0 30 Z"
+        );
+        pin.setAttribute("fill", "#ff1717");
+        pin.setAttribute("stroke", "#ffffff");
+        pin.setAttribute("stroke-width", "4");
+        pin.setAttribute("stroke-linejoin", "round");
+
+        pinSvg.appendChild(pin);
+
+        const center = document.createElementNS(
+            "http://www.w3.org/2000/svg",
+            "circle"
+        );
+
+        center.setAttribute("cx", "0");
+        center.setAttribute("cy", "-5");
+        center.setAttribute("r", "6");
+        center.setAttribute("fill", "#ffffff");
+
+        pinSvg.appendChild(center);
+        ball.appendChild(pinSvg);
+
+        const duration = 2800;
         const startTime = performance.now();
 
         const points = [
@@ -53,7 +119,21 @@
         function animate(time) {
             const progress = Math.min((time - startTime) / duration, 1);
 
+            /*
             if (progress >= 1) {
+                ball.remove();
+                Renderer.refresh();
+                document.getElementById("evaluatorPanel")
+                    ?.classList.remove("hidden");
+                return;
+            }
+            */
+           if (progress >= 1) {
+                console.log("ANIMAZIONE TERMINATA");
+                console.log("Destinazione:", Game.destinationCell);
+                console.log("routePending:", Game.routePending);
+                console.log("evaluatorPanel:", document.getElementById("evaluatorPanel"));
+
                 ball.remove();
 
                 Renderer.refresh();
