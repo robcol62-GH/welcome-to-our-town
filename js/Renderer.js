@@ -486,7 +486,6 @@ const Renderer = {
         const cell = Game.cells.find(
             c => c.id === player.cellId
         );
-
         if (!cell) {
             Game.log(
                 `Casella ${player.cellId} non trovata per ${player.name}`
@@ -510,16 +509,14 @@ const Renderer = {
 
         const spacing = 22;
 
-        const offsetX =
-            (playerIndex - (playersOnSameCell.length - 1) / 2)
-            * spacing;
-
-        const x = point.x + offsetX;
         // SPOSTAMENTO VERTICALE DEL TURISTA
         const TURISTA_OFFSET_Y = 5;
         const y = point.y + TURISTA_OFFSET_Y;
-        const dimensione = Config.TOKEN_SIZE;
+        // SPOSTAMENTO ORIZZONTALE DEL TURISTA
+        const TURISTA_OFFSET_X = -30;
+        const x = point.x + TURISTA_OFFSET_X;
 
+        const dimensione = Config.TOKEN_SIZE;
         const group = this.create("g");
 
         group.classList.add("player");

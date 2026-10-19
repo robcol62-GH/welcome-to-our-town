@@ -9,8 +9,8 @@
         const oldBall = document.querySelector(".selectorBall");
         if (oldBall) oldBall.remove();
         console.log("LAUNCH SELECTOR AVVIATO");
-console.log("CELLA:", cell);
-console.log("START ELEMENT:", startElement);
+        console.log("CELLA:", cell);
+        console.log("START ELEMENT:", startElement);
 
         const rect = startElement.getBoundingClientRect();
         const startX = rect.left + rect.width / 2;
@@ -117,30 +117,14 @@ console.log("START ELEMENT:", startElement);
         const bounceHeights = [180, 110, 210, 95, 45];
 
         function animate(time) {
-            const progress = Math.min((time - startTime) / duration, 1);
+           const progress = Math.min((time - startTime) / duration, 1);
 
-            /*
-            if (progress >= 1) {
-                ball.remove();
-                Renderer.refresh();
-                document.getElementById("evaluatorPanel")
-                    ?.classList.remove("hidden");
-                return;
-            }
-            */
            if (progress >= 1) {
-                console.log("ANIMAZIONE TERMINATA");
-                console.log("Destinazione:", Game.destinationCell);
-                console.log("routePending:", Game.routePending);
-                console.log("evaluatorPanel:", document.getElementById("evaluatorPanel"));
 
                 ball.remove();
-
                 Renderer.refresh();
-
                 document.getElementById("evaluatorPanel")
                     ?.classList.remove("hidden");
-
                 return;
             }
             const segments = points.length - 1;

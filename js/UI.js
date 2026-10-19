@@ -192,9 +192,28 @@ const UI = {
             Game.log(`Turista arrivato alla casella ${turista.cellId}`);
         };
 
+
         btnGreen?.addEventListener("click", confermaDestinazione);
         btnYellow?.addEventListener("click", confermaDestinazione);
-        btnRed?.addEventListener("click", confermaDestinazione);        
+
+        btnRed?.addEventListener("click", () => {
+            if (!Game.routePending) {
+                return;
+            }
+
+            // Elimina il segnalino senza spostare il Turista
+            Game.destinationCell = null;
+            Game.routePending = false;
+
+            // Nasconde il Valutatore
+            document.getElementById("evaluatorPanel")
+                ?.classList.add("hidden");
+
+            // Aggiorna la scacchiera
+            Renderer.refresh();
+
+            Game.log("Valutazione ROSSA: il Turista resta nella casella attuale");
+        });
 
         document.addEventListener(
 
