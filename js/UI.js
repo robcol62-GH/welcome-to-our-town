@@ -196,6 +196,7 @@ const UI = {
         btnGreen?.addEventListener("click", confermaDestinazione);
         btnYellow?.addEventListener("click", confermaDestinazione);
 
+
         btnRed?.addEventListener("click", () => {
             if (!Game.routePending) {
                 return;
@@ -213,7 +214,46 @@ const UI = {
             Renderer.refresh();
 
             Game.log("Valutazione ROSSA: il Turista resta nella casella attuale");
+
+            // Mostra il messaggio di errore
+            mostraMessaggioRosso();
         });
+
+        function mostraMessaggioRosso() {
+            const overlay = document.createElement("div");
+            overlay.id = "sorryOverlay";
+
+            Object.assign(overlay.style, {
+                position: "fixed",
+                inset: "0",
+                zIndex: "100000",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                background: "rgba(0, 0, 0, 0.65)",
+                cursor: "pointer"
+            });
+
+            const img = document.createElement("img");
+            img.src = "images/Sorry.png";
+            img.alt = "Sorry, you got lost! Try again!";
+
+            Object.assign(img.style, {
+                display: "block",
+                maxWidth: "90vw",
+                maxHeight: "90vh",
+                objectFit: "contain"
+            });
+
+            overlay.appendChild(img);
+
+            // Clic sull'immagine o sullo sfondo per chiudere
+            overlay.addEventListener("click", () => {
+                overlay.remove();
+            });
+
+            document.body.appendChild(overlay);
+        }
 
         document.addEventListener(
 
