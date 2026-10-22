@@ -112,10 +112,6 @@ const UI = {
             this.showDice();
         });        
 
-        this.btnTokenSize.addEventListener("click", () => {
-            this.tokenSizePanel.classList.toggle("hidden");
-        });
-
         this.tokenSizeRange.addEventListener("input", () => {
             const dimensione = Number(this.tokenSizeRange.value);
 
