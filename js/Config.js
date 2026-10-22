@@ -26,7 +26,7 @@ const Config = {
     CROWDING_LIMIT:4,
 
     // Grandezza Segnalino
-    TOKEN_SIZE: 90,
+    TOKEN_SIZE: 150,
 
     // Ingrandimento Segnalino
     TOKEN_HOVER_FACTOR: 3.0,

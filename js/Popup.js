@@ -20,9 +20,7 @@
         if (!board) return;
 
         const boardRect = board.getBoundingClientRect();
-        const endX = boardRect.left + boardRect.width / 2;
-        const endY = boardRect.top + boardRect.height / 2;
-
+        
         const ball = document.createElement("div");
         ball.className = "selectorBall";
         document.body.appendChild(ball);
@@ -44,8 +42,14 @@
             return;
         }
         Game.destinationCell = destinazione;
-        Game.routePending = true;
 
+        const point = Board.relativeToBoard(
+            destinazione.position.x,
+            destinazione.position.y
+        );
+        const endX = boardRect.left + point.x;
+        const endY = boardRect.top + point.y;
+        Game.routePending = true;
         Game.log(`Destinazione estratta: ${destinazione.id}`);
 
         // Sostituisce l'immagine del selettore con il marker Maps

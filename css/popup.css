@@ -671,8 +671,8 @@ position:absolute;
 
 .selectorBall {
     position: fixed;
-    width: 250px;
-    height: 250px;
+    width: 450px;
+    height: 450px;
     z-index: 99999;
     pointer-events: none;
     border-radius: 50%;
