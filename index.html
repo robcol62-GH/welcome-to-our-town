@@ -244,6 +244,25 @@
             <button id="btnDice">
                 🎲 Dice
             </button>
+
+            <button id="btnTokenSize">
+                Grandezza pedina
+            </button>
+
+            <div id="tokenSizePanel" class="hidden">
+                <label for="tokenSizeRange">
+                    Grandezza: <span id="tokenSizeValue">150</span> px
+                </label>
+
+                <input
+                    type="range"
+                    id="tokenSizeRange"
+                    min="50"
+                    max="350"
+                    step="5"
+                    value="150">
+            </div>
+
             <hr><br>
 
             <button id="btnFullscreen">

@@ -18,6 +18,10 @@ const UI = {
         this.btnFullscreen = document.getElementById("btnFullscreen");
         this.btnTimer = document.getElementById("btnTimer");
         this.btnDice = document.getElementById("btnDice");
+        this.btnTokenSize = document.getElementById("btnTokenSize");
+        this.tokenSizePanel = document.getElementById("tokenSizePanel");
+        this.tokenSizeRange = document.getElementById("tokenSizeRange");
+        this.tokenSizeValue = document.getElementById("tokenSizeValue");        
         this.btnConfig = document.getElementById("btnConfig");
         this.btnNumbers = document.getElementById("btnNumbers");
         this.btnExport = document.getElementById("btnExport");        
@@ -66,6 +70,15 @@ const UI = {
             this.btnExport.style.display = "none";
         }
 
+        const dimensioneSalvata = localStorage.getItem("WTOT_TOKEN_SIZE");
+
+        if (dimensioneSalvata !== null) {
+            Config.TOKEN_SIZE = Number(dimensioneSalvata);
+        }
+
+        this.tokenSizeRange.value = Config.TOKEN_SIZE;
+        this.tokenSizeValue.textContent = Config.TOKEN_SIZE;
+
         this.events();
         Game.log("UI inizializzata");
     },
@@ -98,6 +111,21 @@ const UI = {
         this.btnDice.addEventListener("click", () => {
             this.showDice();
         });        
+
+        this.btnTokenSize.addEventListener("click", () => {
+            this.tokenSizePanel.classList.toggle("hidden");
+        });
+
+        this.tokenSizeRange.addEventListener("input", () => {
+            const dimensione = Number(this.tokenSizeRange.value);
+
+            this.tokenSizeValue.textContent = dimensione;
+            Config.TOKEN_SIZE = dimensione;
+
+            localStorage.setItem("WTOT_TOKEN_SIZE", dimensione);
+
+            Renderer.refresh();
+        });
         this.btnDiceClose2.addEventListener("click", () => {
              this.dicePanel.classList.add("hidden");
         });
